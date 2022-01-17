@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+   {{>navbar}}
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <div class="admin_container">
+        <div class="admin_sideslide">
+            <div class="profile-pic-div">
+                <img src="photo/Gautam.jpg" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+            </div>
+
+            <ul class="admin_navbar">
+                <li> <a href="https://dashboard.razorpay.com/app/dashboard">Dashboard</a> </li>
+                <li> <a href="adminMenu">Menu</a> </li>
+                <li> <a href="adminOrder">Order</a> </li>
+                <li> <a href="addProduct">Add Product</a> </li>
+                <li> <a href="adminAbout">About</a> </li>
+
+            </ul>
+        </div>
+        <div class="addProduct">
+            <table class="adminAddProduct_table">
+                <tr class="add_product_heading">
+                    <th class="add_product_image">Product Image</th>
+                    <th class="add_product_name">Product Name</th>
+                    <th class="add_product_price">Product Price</th>
+                    <th class="add_product_itemtype">Item type</th>
+                    <th class="add_product_info">Details</th>
+                    <th class="add_product_offers">Offer</th>
+                </tr>
+                <form action="/editMenu" method="POST">
+                    <tr class="add_product_summary1">
+                    </tr>
+                    {{!-- <td class="add_product_detail"> <input type="submit" value="Save Change" class="Save_product"> </td> --}}
+                    
+                    <i class="far fa-trash-alt" aria-hidden="true"></i>
+                    
+                </form>
+
+
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+
+   {{>footer}}
+    <script src="index.js"></script>
+
+</body>
+
+</html>

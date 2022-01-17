@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    {{>navbar}};
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <div class="admin_container">
+        <div class="admin_sideslide">
+            <div class="profile-pic-div">
+                <img src="photo/Gautam.jpg" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+            </div>
+
+            <ul class="admin_navbar">
+                <li> <a href="https://dashboard.razorpay.com/app/dashboard">Dashboard</a> </li>
+                <li> <a href="adminMenu">Menu</a> </li>
+                <li> <a href="adminOrder">Order</a> </li>
+                <li> <a href="addProduct">Add Product</a> </li>
+                <li> <a href="adminAbout">About</a> </li>
+
+            </ul>
+        </div>
+        <div class="adminorder">
+            <table>
+                <tr class="order_table">
+                    <th class="payment_id">Payment_ID</th>
+                    <th class="order_list1">Order</th>
+                    <th class="UserContact">Contact</th>
+                    <th class="User_address">Address</th>
+                    <th class="order_status">Status</th>
+                </tr>
+                <tr class="order_list">
+                    <td class="user_payment order_product_detail">iz31209j00</td>
+                    <td class="user_order order_product_detail">
+                        <li>Samosa</li><br>
+                        <li>Maggie</li><br>
+                        <li>Pepsi</li>
+                       
+                    </td>
+                    <td class="user_call order_product_detail">7903969553</td>
+                    <td class="user_address order_product_detail">c20,BH2</td>
+                    <td class="order_detail order_product_detail">Accept</td>
+                </tr>
+            </table>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    {{>footer}}
+    <script src="index.js"></script>
+
+</body>
+
+</html>

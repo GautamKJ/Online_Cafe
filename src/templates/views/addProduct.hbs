@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+   {{>navbar}} 
+
+
+    <div class="admin_container">
+        <div class="admin_sideslide">
+            <div class="profile-pic-div">
+                <img src="photo/Gautam.jpg" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+            </div>
+
+            <ul class="admin_navbar">
+               <li> <a href="https://dashboard.razorpay.com/app/dashboard">Dashboard</a> </li>
+                <li> <a href="adminMenu">Menu</a> </li>
+                <li> <a href="adminOrder">Order</a> </li>
+                <li> <a href="addProduct">Add Product</a> </li>
+                  <li> <a href="adminAbout">About</a> </li>
+
+            </ul>
+        </div>
+        <div class="addProduct">
+            <table class="adminAddProduct_table">
+                <tr class="add_product_heading">
+                    <th class="add_product_image">Product Image</th>
+                    <th class="add_product_name">Product Name</th>
+                    <th class="add_product_price">Product Price</th>
+                    <th class="add_product_itemtype">Item type</th>
+                    <th class="add_product_info">Details</th>
+                    <th class="add_product_offers">Offer</th>
+                </tr>
+                <tr class="add_product_summary">
+                    <form action="/addProductList" method="POST">
+                    <td class="add_product_detail six">
+                        <div class="admin-pic-div">
+                            <img src="photo/Gautam.jpg" id="photo1">
+                            <input type="file" id="file1" name="photofile">
+                            <label for="file1" id="uploadBtn1">Add</label>
+                        </div>
+                    </td>
+                    <td class="add_product_detail one"><input type="text" name="item_Name" id="item_Name" size="7" placeholder="Name"></td>
+                    <td class="add_product_detail two"><input type="text" name="item_price1" id="item_price1"  size="1" placeholder="price" ></td>
+                    <td class="add_product_detail three"><input type="text" name="item_type" id="item_type" size="5" placeholder="type"></td>
+                    <td class="add_product_detail four"><textarea name="item_info" id="item_info" cols="20" rows="5" placeholder="about"></textarea></td>
+                    <td class="add_product_detail five"><input type="text" name="item_offers" id="item_offers" size="5" placeholder="offers"></td>
+                    <td class="add_product_detail"> <input type="submit" value="Add Product" class="Save_product"> </td>
+
+                </form>
+                </tr>
+            </table>
+            
+        </div>
+
+    </div>
+
+
+
+
+   {{>footer}}
+    <script src="index.js"></script>
+
+</body>
+
+</html>

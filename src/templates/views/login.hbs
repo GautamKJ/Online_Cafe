@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORNER BAKERY-sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+{{>navbar}}
+    <!-- ..................................................................................................................................... -->
+
+    <div class="background">
+        <img src="photo/bg3.png" alt="background-image">
+        <div class="login-content">
+
+            <form action="/login" id="login-form" method="POST">
+                <h1 class="cafe-name">CORNER BAKERY</h1>
+                <div class="email">
+                    <input type="email" name="email" id="email-id" placeholder="Email">
+                </div>
+                <div class="password">
+                    <input type="password" name="password" id="password-id" placeholder="*********">
+                </div>
+                <div class="sign-in">
+                    <input type="submit" value="Sign in" id="submit-id">
+                </div>
+                <div class="need-help">
+                    <input type="checkbox" name="check" id="checkbox"> Need help?
+                </div>
+
+                <p class="create"><span style="color: black;"> Don't have an account?</span><a href="register"> 
+                         Sign up</a></p>
+
+            </form>
+
+
+
+        </div>
+    </div>
+
+{{>footer}}
+
+
+</body>
+
+</html>

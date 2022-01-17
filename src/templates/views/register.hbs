@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORNER BAKERY-sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    {{>navbar}}
+    <!-- ..................................................................................................................................... -->
+
+    <div class="background">
+        <img src="photo/bg3.png" alt="background-image">
+        <div class="register-content">
+
+            <form action="/register" id="login-form" method="POST">
+                <h1 class="cafe-name">CORNER BAKERY</h1>
+                <div class="name">
+                    First Name <input type="text" name="firstName" id="first-name">
+                    Last Name <input type="text" name="lastName" id="last-name">
+                </div>
+                <div class="getemail div-class">
+                    Email: <input type="email" name="email" id="userEmail" class="input-widht">
+                </div>
+                <div class="phone div-class">
+                    Mob: <input type="text" name="phone" id="phoneNumber" class="input-widht">
+                </div>
+                <div class="age div-class">
+                    Age: <input type="text" name="age" id="age" class="input-widht">
+                </div>
+
+                <div class="address div-class">
+
+                    Address: <textarea name="address" id="address" cols="70" rows="5"></textarea>
+                </div>
+
+                <div class="getpassword div-class">
+                    Password <input type="password" name="userPassword" id="userPassword" class="input-widht">
+                </div>
+                <div class="getconfirmpassword div-class">
+                    ConfirmPassword <input type="password" name="userConfirmPassword" id="userConfirmPassword"
+                        class="input-widht">
+                </div>
+                <input type="submit" value="register" id="register-click">
+            </form>
+
+
+
+        </div>
+    </div>
+
+
+    {{>footer}}
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    <h1 class="profile_heading">WELCOME TO CORNEY BAKERY</h1>
+
+    <div class="profile_container">
+
+        <div class="profile_sideslide">
+            <div class="profile-pic-div">
+                <img src="photo/Gautam.jpg" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+            </div>
+
+            <ul class="profile_navbar">
+                <li> <a href="profile_about">About</a> </li>
+                <li> <a href="profile_order">Orders</a> </li>
+                <li> <a href="logout">Logout</a> </li>
+            </ul>
+        </div>
+
+        <div class="profile_homePage">
+            <img src="photo/profile_bg.jpg" alt="">
+        </div>
+
+    </div>
+    {{>footer}}
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

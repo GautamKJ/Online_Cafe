@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORNER BAKERY Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    {{>navbar}}
+
+
+    <table class="cart-table">
+        <tr class="cart-heading">
+            <th class="cart-food">Food</th>
+            <th class="cart-quantity">Quantity</th>
+            <th class="cart-subPrice">Sub Price</th>
+        </tr>
+        <tr class="cart-orderlist" id="cart_items">
+
+            {{!-- <td class="cart-info cart-orderall">No Item is added yet.... </td> --}}
+
+            
+             {{!-- <td class="cart-info cart-orderall"><img src="photo/drink.jpg" alt="drink">
+        <div class="cart-detail">
+            ${orgdata.orderName[i]} <br> $<span class="eachPrice">${orgdata.orderPrice[i]}</span>
+            <small class="remove">Remove</small>
+        </div>
+    </td>                                                                                 
+    <td class="cart-orderall cart-quantity"><input type="number" name="quantity" id="quant" value="1"></td>
+    
+    <td class="cart-subtotal cart-orderall" id="itemtotalPrice">  ${orgdata.orderPrice[i]}</td>  --}}
+
+
+        </tr>
+
+        <!-- Bill -->
+
+        <tr class="cart-orderlist cart-bill">
+            <td class="cart-info cart-orderall">
+            </td>
+            <td class="cart-orderall cart-quantity cart-border">
+
+
+
+        <tr class="cart-final">
+            <th>Sub Total</th>
+            <th> Taxes</th>
+            <th>Grand Total</th>
+        </tr>
+        </td>
+
+
+        <td class="cart-subtotal cart-orderall cart-border">
+
+            <tr class="cart-final">
+                <th class="subFinalbill"></th>
+                <th class="taxes"> </th>
+                <th class="grandTotal"></th>
+            </tr>
+        </td>
+        <br><br><br>
+        </tr>
+
+
+
+
+
+    </table>
+    <div class="order">
+        <button id="rzp-button1">Pay Now</button>
+        {{!-- <p class="order-place"><a href="payment">Order Now</a> </p> --}}
+    </div>
+    <!-- ------------------------------ -->
+    {{>footer}}
+
+    <script src="index.js"></script>
+</body>
+
+</html>

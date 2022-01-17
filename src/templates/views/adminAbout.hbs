@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    {{>navbar}}
+
+   <div class="admin_container">
+        <div class="admin_sideslide">
+            <div class="profile-pic-div">
+                <img src="photo/Gautam.jpg" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+            </div>
+
+            <ul class="admin_navbar">
+                <li> <a href="https://dashboard.razorpay.com/app/dashboard">Dashboard</a> </li>
+                <li> <a href="adminMenu">Menu</a> </li>
+                <li> <a href="adminOrder">Order</a> </li>
+                <li> <a href="addProduct">Add Product</a> </li>
+                <li> <a href="adminAbout">About</a> </li>
+
+            </ul>
+        </div>
+      <form action="/UserDetail" id="login-form" method="POST" class="profile_detail">
+            <h3 class="profile_about">About</h3>
+
+            {{!-- <label class="profile_abouts profile_name">Name: </label><input type="text" name="profile_name"
+                id="profile.name" value="Gautam Jha">
+            <label class="profile_abouts profile_address">Address:</label> <input type="text" name="profile_address"
+                id="profile.name" value="Laheriasarai,Darbhanga">
+            <label class="profile_abouts profile_mobile">Mobile:</label> <input type="text" name="profile_mobile"
+                id="profile.name" value="7903969553">
+            <label class="profile_abouts profile_email">Email: </label> <input type="email" name="profile_email"
+                id="profile.email" value="gautam@gmail.com">
+            <label class="profile_abouts profile_password">Password :</label> <input type="password" name="profile_pass"
+                id="profile_password" value="gautam">
+             <input type="submit" value="Save Change" class="save_change"> --}}
+        </form>
+   
+    </div>
+    {{>footer}}
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

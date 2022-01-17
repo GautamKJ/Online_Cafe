@@ -1,0 +1,25 @@
+{
+  "name": "cafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GautamKJ",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-mysql-session": "^2.1.7",
+    "hbs": "^4.1.2",
+    "jsdom": "^18.0.0",
+    "mongoose": "^6.0.7",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12",
+    "razorpay": "^2.0.7"
+  }
+}
